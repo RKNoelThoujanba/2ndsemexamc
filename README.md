@@ -1,3 +1,7 @@
+
+
+<br> <br> <br>
+<h2> Build: </h2> <br>
 mkdir build <br>
 cd build <br>
 cmake .. <br>
@@ -6,6 +10,7 @@ cmake --build . --config &lt;Debug/Release/RelWithDebInfo&gt; -j &lt;threads to 
 <br> <hr> <br>
 <br>
 
+<h2> Runner: </h2> <br>
 You can also run Runner.py to run the executables after building with cmake <br>
 python3 Runner.py &lt;exec name&gt;<br>
 <br> OR <br>
