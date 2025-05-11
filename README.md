@@ -3,6 +3,8 @@
 Compiler that supports C17 and C++17 <br>
 cmake 3.30 minimum <br>
 python3<br>
+Build System supported by cmake<br>
+For example, A relatively modern Visual Studio installation like VS 2019 or later, GNU Make, MinGW Make, Ninja etc<br>
 
 
 <br> <br> <br>
