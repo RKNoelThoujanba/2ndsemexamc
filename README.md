@@ -1,11 +1,9 @@
 <h2> Dependencies </h2> <br>
-<ol>
 
-    <li>Compiler that supports C17 and C++17</li>
-    <li>cmake 3.30 minimum</li>
-    <li>python3</li>
+Compiler that supports C17 and C++17 <br>
+cmake 3.30 minimum <br>
+python3<br>
 
-</ol>
 
 <br> <br> <br>
 <h2> Build: </h2> <br>
