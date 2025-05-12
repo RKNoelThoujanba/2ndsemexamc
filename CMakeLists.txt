@@ -68,3 +68,6 @@ add_executable(struct struct.c)
 
 project(StringRev)
 add_executable(StringRev StringRev.c)
+
+project(PrimeGen)
+add_executable(PrimeGen PrimeGen.cpp)
