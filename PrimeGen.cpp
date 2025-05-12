@@ -136,6 +136,8 @@ int main(int argc, char* argv[])
         return 3;
     }
 
+    Timer timer;
+
     std::unique_ptr<std::future<std::vector<uint64_t>>[]> tasks = std::make_unique<std::future<std::vector<uint64_t>>[]>(threadCount);
     const double chunkSz = static_cast<double>(upperLimit - lowerLimit + 1) / static_cast<double>(threadCount);
     double chunkRem = (upperLimit - lowerLimit + 1) % threadCount;
@@ -172,8 +174,12 @@ int main(int argc, char* argv[])
         primes.insert(primes.end(), chunk.begin(), chunk.end());
     }
 
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds> (timer.GetTImeEllapsed()).count();
+
     for(const auto prime: primes)
         std::cout << prime << "  ";
 
     std::cout << '\n';
+
+    std::cout << duration << " ms\n";
 }
