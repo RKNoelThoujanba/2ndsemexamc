@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <fstream>
 #include <chrono>
 #include <memory>
 #include <vector>
@@ -176,10 +176,12 @@ int main(int argc, char* argv[])
 
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds> (timer.GetTImeEllapsed()).count();
 
+    std::ofstream file;
+    file.open("primes.txt");
     for(const auto prime: primes)
-        std::cout << prime << "  ";
-
-    std::cout << '\n';
+    {
+        file << prime << "  ";
+    }
 
     std::cout << duration << " ms\n";
 }
